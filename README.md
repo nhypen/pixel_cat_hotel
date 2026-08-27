@@ -12,6 +12,7 @@ The game is available directly in your browser through **GitHub Pages**.
 `https://nhypen.github.io/Pixel_Cat_Hotel/`
 
 Replace `nhypen` and `Pixel_Cat_Hotel` with the name of your GitHub account and repository.
+link (https://nhypen.github.io/pixel_cat_hotel/)
 
 ## 🏨 About the Game
 
