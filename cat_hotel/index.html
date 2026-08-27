@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pixel Cat Hotel</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="world">
+
+    <!-- ========================= -->
+    <!-- TOP BAR -->
+    <!-- ========================= -->
+
+    <header class="topbar">
+
+        <div class="logo">
+            🐾 PIXEL CAT HOTEL
+        </div>
+
+        <div class="stats">
+
+            <div class="stat">
+                💰 <span id="coins">200</span>
+            </div>
+
+            <div class="stat">
+                ⭐ <span id="reputation">1.0</span>
+            </div>
+
+            <div class="stat">
+                📅 DZIEŃ <span id="day">1</span>
+            </div>
+
+            <div class="stat">
+                <span id="dayIcon">☀️</span>
+                <span id="timeText">DZIEŃ</span>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ========================= -->
+    <!-- MAIN -->
+    <!-- ========================= -->
+
+    <main>
+
+        <!-- HOTEL -->
+
+        <section class="hotel-side">
+
+            <div class="sky-decor">
+
+                <div class="cloud cloud-one"></div>
+                <div class="cloud cloud-two"></div>
+
+                <div id="moon" class="moon"></div>
+
+            </div>
+
+
+            <div class="roof">
+
+                <div class="roof-sign">
+                    CAT HOTEL
+                </div>
+
+            </div>
+
+
+            <div id="hotel" class="hotel"></div>
+
+
+            <div class="ground">
+
+                <div class="grass"></div>
+
+                <div class="path">
+
+                    <div class="path-line"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ========================= -->
+        <!-- SIDE UI -->
+        <!-- ========================= -->
+
+        <aside>
+
+            <!-- CAT INFO -->
+
+            <section class="panel">
+
+                <h2>🐱 WYBRANY KOT</h2>
+
+                <div id="selectedCatInfo">
+
+                    <div class="no-cat">
+                        Kliknij kota w pokoju.
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ACTIONS -->
+
+            <section class="panel">
+
+                <h2>🎮 OPIEKA</h2>
+
+                <div class="action-grid">
+
+                    <button
+                        class="action eat"
+                        onclick="commandSelectedCat('eat')"
+                    >
+                        🍗 NAKARM
+                    </button>
+
+
+                    <button
+                        class="action sleep"
+                        onclick="commandSelectedCat('sleep')"
+                    >
+                        💤 SEN
+                    </button>
+
+
+                    <button
+                        class="action play"
+                        onclick="commandSelectedCat('play')"
+                    >
+                        🧶 ZABAWA
+                    </button>
+
+
+                    <button
+                        class="action toilet"
+                        onclick="commandSelectedCat('toilet')"
+                    >
+                        🚽 KUWETA
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="clean-room-button"
+                    onclick="cleanSelectedRoom()"
+                >
+                    🧹 POSPRZĄTAJ POKÓJ — 5 💰
+                </button>
+
+            </section>
+
+
+            <!-- HOTEL -->
+
+            <section class="panel">
+
+                <h2>🏨 HOTEL</h2>
+
+
+                <button
+                    class="large-button"
+                    onclick="addGuest()"
+                >
+                    🛎 PRZYJMIJ NOWEGO KOTA
+                </button>
+
+
+                <button
+                    class="large-button upgrade"
+                    onclick="buyRoom()"
+                >
+                    🏗 NOWY POKÓJ —
+                    <span id="roomPrice">400</span>
+                    💰
+                </button>
+
+
+                <div class="hotel-info">
+
+                    <span>
+                        🛏 Pokoje
+                    </span>
+
+                    <strong id="roomCountText">
+                        4
+                    </strong>
+
+                </div>
+
+
+                <div class="hotel-info">
+
+                    <span>
+                        🐱 Goście
+                    </span>
+
+                    <strong id="guestCount">
+                        0
+                    </strong>
+
+                </div>
+
+            </section>
+
+
+            <!-- NEWS -->
+
+            <section class="panel">
+
+                <h2>📜 HOTEL NEWS</h2>
+
+                <div
+                    id="messages"
+                    class="messages"
+                >
+
+                    <p>
+                        🐾 Pixel Cat Hotel został otwarty!
+                    </p>
+
+                </div>
+
+            </section>
+
+        </aside>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
